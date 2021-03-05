@@ -8,7 +8,7 @@ const reducer = (state = initialState, action) => {
     case SET_ACTOR:
       return {...state, actor: action.payload}
     case SET_ACTOR_ID:
-      return {...state, actor: action.payload}
+      return {...state, actorId: action.payload}
     default:
       return state
   }

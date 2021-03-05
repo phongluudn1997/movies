@@ -15,3 +15,5 @@ const setActor = actor => ({
   type: SET_ACTOR,
   payload: actor,
 })
+
+export {setActor, setActorId}
