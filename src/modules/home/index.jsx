@@ -1,7 +1,8 @@
 import * as React from "react"
+import {Jumbotron} from "./components/jumbotron"
 
 function Home() {
-    return <div>Home</div>
+    return <div><Jumbotron/></div>
 }
 
 export {Home}
