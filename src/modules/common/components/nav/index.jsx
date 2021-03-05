@@ -6,15 +6,13 @@ import logo from 'assets/logo.png'
 
 function Nav() {
   return (
-    <div className="px-10 pt-10 pb-20">
-      <Flex justifyContent="center" alignItems="center">
-        <img src={logo} alt="Logo" />
-        <Spacer />
-        <NavLinks />
-        <Spacer />
-        <AuthenButtons />
-      </Flex>
-    </div>
+    <Flex justifyContent="center" alignItems="center">
+      <img src={logo} alt="Logo" />
+      <Spacer />
+      <NavLinks />
+      <Spacer />
+      <AuthenButtons />
+    </Flex>
   )
 }
 
