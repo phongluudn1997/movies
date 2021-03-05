@@ -7,8 +7,8 @@ function Nav() {
     <Flex>
       <img src={logo} alt="Logo" />
       <Spacer />
-      <ul className={styles['list']}>
-        <li>Home</li>
+      <ul className="">
+        <li className="font-bold">Home</li>
         <li>About</li>
       </ul>
       <Spacer />
