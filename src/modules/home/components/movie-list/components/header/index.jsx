@@ -5,7 +5,7 @@ import {NavigateGroupButtons} from 'modules/common/components/navigate-group-but
 function Header() {
   return (
     <div className="flex justify-between">
-      <SmallHeader sutTitle="Top Actions" title="RECOMMENDED MOVIES" />
+      <SmallHeader subTitle="Top Trending" title="RECOMMENDED MOVIES" />
       <NavigateGroupButtons />
     </div>
   )

@@ -7,8 +7,12 @@ function usePopulardMovies() {
   )
 }
 
+function useTrendingMovies() {
+  return useQuery(['movies', 'trending'], () => client(`trending/movie/week`))
+}
+
 function useMovie(id) {
   return useQuery(['movies', id], () => client(`find/${id}`))
 }
 
-export {usePopulardMovies, useMovie}
+export {usePopulardMovies, useTrendingMovies, useMovie}
