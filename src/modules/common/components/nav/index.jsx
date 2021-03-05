@@ -1,18 +1,20 @@
 import * as React from 'react'
 import {Flex, Spacer} from '@chakra-ui/react'
+import {NavLinks} from './components/nav-links'
+import {AuthenButtons} from './components/authen-buttons'
 import logo from 'assets/logo.png'
-import styles from './styles.module.scss'
+
 function Nav() {
   return (
-    <Flex>
-      <img src={logo} alt="Logo" />
-      <Spacer />
-      <ul className="">
-        <li className="font-bold">Home</li>
-        <li>About</li>
-      </ul>
-      <Spacer />
-    </Flex>
+    <div className="px-10 pt-10 pb-20">
+      <Flex justifyContent="center" alignItems="center">
+        <img src={logo} alt="Logo" />
+        <Spacer />
+        <NavLinks />
+        <Spacer />
+        <AuthenButtons />
+      </Flex>
+    </div>
   )
 }
 
