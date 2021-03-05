@@ -15,6 +15,7 @@ function client(
       ...customHeaders,
     },
     data,
+    ...customConfig,
   }
   return axios(config)
     .then(response => response.data)
