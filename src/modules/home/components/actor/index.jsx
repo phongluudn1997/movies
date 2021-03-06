@@ -4,7 +4,7 @@ import {ActorMovies} from './components/actor-movies'
 
 function Actor() {
   return (
-    <div className="flex">
+    <div className="flex p-24">
       <ActorProfile />
       <ActorMovies />
     </div>
