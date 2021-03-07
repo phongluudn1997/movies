@@ -3,8 +3,9 @@ import {Rating} from 'modules/common/components/rating'
 import {HiPlay} from 'react-icons/hi'
 import {Button} from '@chakra-ui/react'
 function MovieInfo({data}) {
+  console.log(data)
   return (
-    <div className="text-white flex flex-col gap-2">
+    <div className="text-white flex flex-col gap-2 items-start">
       <span>31 SEPT 2019</span>
       <h1>AVENGERS - INFINITY WAR</h1>
       <p>
