@@ -1,6 +1,7 @@
 import * as React from 'react'
 import {useSelector} from 'react-redux'
 import {Spinner} from 'modules/common/components/spinner'
+import styles from './styles.module.scss'
 
 const getImgSrc = path => {
   return 'https://image.tmdb.org/t/p/original/' + path
@@ -12,7 +13,7 @@ function ActorMovies() {
     return <Spinner />
   }
   return (
-    <div className="flex flex-1 gap-4 self-end">
+    <div className={styles['movies']}>
       {actor.known_for.map(movie => {
         return (
           <div className="flex-1">
