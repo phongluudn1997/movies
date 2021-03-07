@@ -16,12 +16,12 @@ function ActorMovies() {
     <div className={styles['movies']}>
       {actor.known_for.map(movie => {
         return (
-          <div className="flex-1">
+          <div className="flex-1 self-end" key={movie.id}>
             <img
               src={getImgSrc(movie.poster_path)}
               alt=""
               key={movie.id}
-              className="object-cover"
+              className="object-cover rounded-md"
             />
           </div>
         )

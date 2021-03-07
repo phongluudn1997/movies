@@ -15,9 +15,9 @@ function ActorProfile() {
   return (
     <>
       <div className={styles['image']}>
-        <img src={imgSrc} alt="" />
+        <img src={imgSrc} alt="" className="w-full h-auto rounded-lg" />
       </div>
-      <div className={styles['detail']}>Detail</div>
+      <div className={styles['detail']}>{actor.name}</div>
     </>
   )
 }
