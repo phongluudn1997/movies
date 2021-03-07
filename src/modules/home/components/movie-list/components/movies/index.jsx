@@ -13,7 +13,7 @@ function Movies() {
 
   return (
     <div className="flex gap-10">
-      {data.results.slice(0, 4).map((e, i) => {
+      {data.results?.slice(0, 4).map((e, i) => {
         return <MovieCard data={e} key={e.id} />
       })}
     </div>

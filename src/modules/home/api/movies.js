@@ -3,7 +3,7 @@ import {useQuery} from 'react-query'
 
 function usePopulardMovies() {
   return useQuery(['movies', 'popular'], () =>
-    client(`movie/popular`).then(res => res.results.slice(0, 5)),
+    client(`movie/popular`).then(res => res.results?.slice(0, 5)),
   )
 }
 
