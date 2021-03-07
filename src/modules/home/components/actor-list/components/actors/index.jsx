@@ -1,13 +1,15 @@
 import * as React from 'react'
-import {usePopularActors} from 'modules/home/api/actors'
+import {usePopularActors, useActors} from 'modules/home/api/actors'
 import {Spinner} from 'modules/common/components/spinner'
 import {ActorCard} from './actor-card'
-import {useDispatch} from 'react-redux'
+import {useDispatch, useSelector} from 'react-redux'
 import {setActor} from '@redux/actor/actions'
 
 function Actors() {
   const dispatch = useDispatch()
-  const {data: actors, isLoading, isSuccess} = usePopularActors()
+  const {search} = useSelector(state => state.actor)
+  console.log('RENDER', search)
+  const {data: actors, isLoading, isSuccess} = useActors(search)
   React.useEffect(() => {
     if (isSuccess) {
       dispatch(setActor(actors[0]))

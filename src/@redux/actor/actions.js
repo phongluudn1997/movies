@@ -1,10 +1,5 @@
 import constants from './constants'
-const {SET_ACTOR, SET_ACTOR_ID, IS_FETCHING_ACTOR} = constants
-
-const setIsFetchingActor = isFetching => ({
-  type: IS_FETCHING_ACTOR,
-  payload: isFetching,
-})
+const {SET_ACTOR, SET_ACTOR_ID, SET_SEARCH} = constants
 
 const setActorId = actorId => ({
   type: SET_ACTOR_ID,
@@ -16,4 +11,9 @@ const setActor = actor => ({
   payload: actor,
 })
 
-export {setActor, setActorId}
+const setSearch = actor => ({
+  type: SET_SEARCH,
+  payload: actor,
+})
+
+export {setActor, setActorId, setSearch}

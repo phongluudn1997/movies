@@ -2,10 +2,15 @@ import * as React from 'react'
 import {Header as SmallHeader} from 'modules/common/components/header'
 import {SearchBar} from 'modules/common/components/search'
 import {NavigateGroupButtons} from 'modules/common/components/navigate-group-button'
+import {useDispatch} from 'react-redux'
+import {setSearch} from '@redux/actor/actions'
 
 function Header() {
+  const dispatch = useDispatch()
+
   function onSubmit(data) {
-    console.log('Submit Data', data)
+    const {actor} = data
+    dispatch(setSearch(actor))
   }
 
   return (
