@@ -4,7 +4,7 @@ import {ActorMovies} from './components/actor-movies'
 
 function Actor() {
   return (
-    <div className="flex p-24">
+    <div className="flex p-24 gap-8 flex-nowrap">
       <ActorProfile />
       <ActorMovies />
     </div>

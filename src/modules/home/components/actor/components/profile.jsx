@@ -12,7 +12,7 @@ function ActorProfile() {
   const imgSrc = 'https://image.tmdb.org/t/p/original/' + actor.profile_path
 
   return (
-    <div>
+    <div className="w-1/3">
       <img src={imgSrc} alt="" />
     </div>
   )
