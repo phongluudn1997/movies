@@ -26,7 +26,7 @@ function Jumbotron() {
           <Nav />
           <div className="flex">
             <div className="flex-1">
-              <MovieInfo data={movies[0]} />
+              <MovieInfo data={movies[currentImage]} />
             </div>
             <div className="flex flex-1 gap-2 text-white items-end justify-end">
               {Array.from({length: 5}).map((_, i) => {
